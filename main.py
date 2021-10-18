@@ -72,12 +72,15 @@ def medie_arit(l , x):
         return True
     return False
 
+
 def test_medie_arit():
     assert(medie_arit([12, 3, 4, 5], 4)) is True
     assert(medie_arit([12, 3, 4, 5], 20)) is False
 
 
 test_medie_arit()
+
+
 def NrDivProprii(l):
     '''
     adauga in lista duap fiecare elem numarul sau de div
@@ -100,6 +103,8 @@ def test_NrDivProprii():
 
 
 test_NrDivProprii()
+
+
 def main():
     l = []
     while True:
