@@ -118,7 +118,7 @@ def main():
             print(ElimNrPrim(l))
         elif optiune == "4":
             print(NrDivProprii(l))
-        elif optiune  == "5":
+        elif optiune == "5":
             print(NrDivProprii(l))
         elif optiune == "x":
             break
