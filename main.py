@@ -52,9 +52,15 @@ def ElimNrPrim(l):
     return rezultat
 
 
+def test_ElimNrPrim():
+    assert ElimNrPrim([12, 3, 13 , 24]) == [12, 24]
+
+
+test_ElimNrPrim()
+
+
 def medie_arit(l , x):
     '''
-    !!!!!!!!!!!!!!!!!!!!!
     se afiseze daca media aritmetica a numerelor din lista este mai mare decat un numar dat
     :param l: o lista de numere intregi
     :return: DA sau NU
@@ -66,7 +72,12 @@ def medie_arit(l , x):
         return True
     return False
 
+def test_medie_arit():
+    assert(medie_arit([12, 3, 4, 5], 4)) is True
+    assert(medie_arit([12, 3, 4, 5], 20)) is False
 
+
+test_medie_arit()
 def NrDivProprii(l):
     '''
     adauga in lista duap fiecare elem numarul sau de div
@@ -78,11 +89,17 @@ def NrDivProprii(l):
         s = 0
         for j in range(2, i//2 + 1):
             if i % j ==0:
-                s = s + j
+                s = s + 1
         rezultat.append(i)
         rezultat.append(s)
     return rezultat
 
+
+def test_NrDivProprii():
+    assert(NrDivProprii([12, 13, 14])) == [12, 4, 13, 0, 14, 2]
+
+
+test_NrDivProprii()
 def main():
     l = []
     while True:
@@ -94,6 +111,8 @@ def main():
             print(l)
         elif optiune == "3":
             print(ElimNrPrim(l))
+        elif optiune == "4":
+            print(NrDivProprii(l))
         elif optiune  == "5":
             print(NrDivProprii(l))
         elif optiune == "x":
