@@ -53,13 +53,14 @@ def ElimNrPrim(l):
 
 
 def test_ElimNrPrim():
-    assert ElimNrPrim([12, 3, 13 , 24]) == [12, 24]
+    assert(ElimNrPrim([12, 3, 13, 24])) == [12, 24]
+    assert(ElimNrPrim([32, 13, 42, 83])) == [32, 42]
 
 
 test_ElimNrPrim()
 
 
-def medie_arit(l , x):
+def medie_arit(l, x):
     '''
     se afiseze daca media aritmetica a numerelor din lista este mai mare decat un numar dat
     :param l: o lista de numere intregi
@@ -100,6 +101,7 @@ def NrDivProprii(l):
 
 def test_NrDivProprii():
     assert(NrDivProprii([12, 13, 14])) == [12, 4, 13, 0, 14, 2]
+    assert(NrDivProprii([32 , 15 , 25])) == [32, 4, 15, 2, 25, 1]
 
 
 test_NrDivProprii()
